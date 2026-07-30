@@ -1,0 +1,13 @@
+{
+    "id": "9fcec50d-bcb6-4914-a6fb-d1e18279c9e1",
+    "url": "file:///app/collector/hotdir/past_proposal_msd_case_management.pdf",
+    "title": "past_proposal_msd_case_management.pdf",
+    "docAuthor": "(unspecified)",
+    "description": "(anonymous)",
+    "docSource": "pdf file uploaded by the user.",
+    "chunkSource": "",
+    "published": "unknown",
+    "wordCount": 177,
+    "pageContent": "Technical Proposal\nCase Management & Referral Tracking Platform for the Ministry of Social Development\nSubmitted in response to MSD/IT/2023-009\nExecutive Summary\nWe are pleased to submit this proposal for the design, development, and deployment of a unified case\nmanagement and referral tracking platform for the Ministry of Social Development (MSD), replacing a\nfragmented set of spreadsheet-based tools used across 9 regional offices. Our team combines deep\npublic-sector delivery experience with proven expertise in secure, offline-capable field data systems.\nUnderstanding of the Requirements\nMSD required a web-based case management system with a companion mobile app for field caseworkers,\nintegration with the national social registry API, migration of over 40,000 existing case records, and a\n12-month post-launch support period.\nProposed Approach & Methodology\nWe proposed a phased Agile delivery across four stages: discovery and requirements validation,\narchitecture and data model design, iterative development with bi-weekly stakeholder demos, and a\nstructured UAT and training rollout across all 9 regional offices.\nOutcome\nThe project was delivered on schedule over 8 months, followed by a 12-month support engagement. The\nplatform has processed over 60,000 case records since go-live, with a reported 35% reduction in average\ncase processing time across regional offices.",
+    "token_count_estimate": 270
+}

@@ -1,0 +1,13 @@
+{
+    "id": "7fa6ecb4-d270-4798-8b77-fc317b254105",
+    "url": "file:///app/collector/hotdir/cv_julien_castellan_solutions_architect.pdf",
+    "title": "cv_julien_castellan_solutions_architect.pdf",
+    "docAuthor": "(unspecified)",
+    "description": "(anonymous)",
+    "docSource": "pdf file uploaded by the user.",
+    "chunkSource": "",
+    "published": "unknown",
+    "wordCount": 135,
+    "pageContent": "Julien Castellan\nSolutions Architect — Cloud & Healthcare Systems Integration\nProfile\nSolutions architect with 9 years of experience designing secure, scalable systems for regulated sectors, with\na focus on healthcare data platforms and government API integrations. Strong background in role-based\naccess control, encryption standards, and offline-capable mobile architectures.\nRelevant Experience\nSolutions Architect — Ministry of Health Patient Referral Platform (2022–2024)\nl\nDesigned the system architecture and data model for a referral-tracking platform used by 500+ field\nagents.\nl\nBuilt an integration layer to a national health information exchange API, handling authentication, data\nmapping, and audit logging.\nl\nDefined the encryption-at-rest and in-transit standards later validated by an independent security audit.\nTechnical Architect — Offline-First Field Data Collection App (2020–2021)\nl\nArchitected an offline-capable Android/iOS data collection app with conflict-free sync for low-connectivity\nrural deployments.\nTechnical Skills\nl\nArchitecture: microservices, REST/GraphQL API design, event-driven systems\nl\nSecurity: OAuth2/OIDC, encryption standards, role-based access control\nl\nMobile: offline-first sync architectures (Android/iOS)\nEducation\nM.Eng. in Computer Science",
+    "token_count_estimate": 263
+}

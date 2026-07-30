@@ -1,0 +1,13 @@
+{
+    "id": "8b7cce15-e0bd-472b-9053-311018bb4e9b",
+    "url": "file:///app/collector/hotdir/project_reference_immunization_registry.pdf",
+    "title": "project_reference_immunization_registry.pdf",
+    "docAuthor": "(unspecified)",
+    "description": "(anonymous)",
+    "docSource": "pdf file uploaded by the user.",
+    "chunkSource": "",
+    "published": "unknown",
+    "wordCount": 109,
+    "pageContent": "Project Reference\nNational Immunization Registry Modernization\nClientNational Ministry of Health\nDuration10 months (development) + 12 months (support)\nTeam Size14 (Project Manager, Solutions Architect, 3 Full-Stack Developers, 2 Mobile Developers, QA Lead, Data Privacy Specialist, and support staff)\nBudgetUSD 410,000\nScopeDesign and deployment of a registry and case-tracking platform across 40+ clinics, with integration into the national health data exchange and an offline-capable mobile app for field health workers.\nResultDelivered on budget and on schedule; adopted as the national standard platform for immunization case tracking, now used by over 500 field staff.\nNote: This project reference, the past proposal, and the accompanying CVs are synthetic documents\ngenerated for pipeline testing purposes only. All names, organizations, and figures are fictional.",
+    "token_count_estimate": 172
+}
