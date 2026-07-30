@@ -24,6 +24,9 @@ jobs:
         with:
           node-version: ${{ steps.nvmrc.outputs.version }}
 
+      - name: Install root deps
+        run: npm install
+
       - name: Install server deps
         working-directory: server
         run: npm install --legacy-peer-deps
@@ -36,8 +39,8 @@ jobs:
 
       - name: Lint (server + collector)
         run: |
-          npm run lint:ci --prefix server
-          npm run lint:ci --prefix collector
+          npm run lint:check --prefix server
+          npm run lint:check --prefix collector
 
       - name: Unit tests
         run: npx jest --ci
