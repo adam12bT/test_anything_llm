@@ -33,6 +33,7 @@
     "@mintplex-labs/mdpdf": "^0.1.9",
     "@modelcontextprotocol/sdk": "^1.24.3",
     "@prisma/client": "5.3.1",
+    "@qdrant/js-client-rest": "^1.18.0",
     "@xenova/transformers": "^2.14.0",
     "adm-zip": "^0.5.16",
     "bcryptjs": "^3.0.3",
@@ -86,7 +87,7 @@
     "**/graphql-request/form-data": "3.0.4",
     "form-data": "4.0.4"
   },
-"overrides": {
+  "overrides": {
     "zod": "3.25.76",
     "zod-to-json-schema": "^3.24.1"
   },
@@ -97,6 +98,7 @@
     "eslint": "9",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-ft-flow": "^3.0.0",
+    "eslint-plugin-prettier": "^5.5.6",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
