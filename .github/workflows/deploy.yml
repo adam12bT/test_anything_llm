@@ -29,13 +29,27 @@ jobs:
         run: |
           rm -rf /tmp/space-deploy
           mkdir -p /tmp/space-deploy
-          rsync -a --exclude='.git' --exclude='.github' ./ /tmp/space-deploy/
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='server/storage/anythingllm.db' \
+            --exclude='server/storage/**/*.db' \
+            --exclude='server/storage/vector-cache' \
+            --exclude='server/storage/documents' \
+            --exclude='server/storage/lancedb' \
+            --exclude='node_modules' \
+            ./ /tmp/space-deploy/
           cp docker/Dockerfile.huggingface /tmp/space-deploy/Dockerfile
           cp README-huggingface.md /tmp/space-deploy/README.md
           # Chroma's local scratch dir doesn't need to ship with the image.
           rm -rf /tmp/space-deploy/docker/chroma_data
           mkdir -p /tmp/space-deploy/docker/chroma_data
           touch /tmp/space-deploy/docker/chroma_data/.gitkeep
+          # Same idea for anythingllm's own storage dir — the app creates
+          # these fresh at container start, so ship an empty placeholder
+          # instead of local dev data/binaries.
+          mkdir -p /tmp/space-deploy/server/storage
+          touch /tmp/space-deploy/server/storage/.gitkeep
 
       - name: Push to the Space
         env:

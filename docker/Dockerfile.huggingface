@@ -57,6 +57,13 @@ ENV STORAGE_DIR="/app/server/storage"
 ENV SERVER_PORT=7860
 ENV CHROMA_ENDPOINT="http://localhost:8000"
 
+# Hardcoded to guarantee Qdrant is selected regardless of whether the HF
+# Space's runtime secret injection picks this up correctly. QDRANT_ENDPOINT
+# and QDRANT_API_KEY are NOT hardcoded here on purpose — those still come
+# from HF Space secrets, since baking the API key into this file would leak
+# it into git history / the public Space's file browser.
+ENV VECTOR_DB=qdrant
+
 EXPOSE 7860
 
 ENTRYPOINT ["/bin/bash", "/usr/local/bin/docker-entrypoint.sh"]
