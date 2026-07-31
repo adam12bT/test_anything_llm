@@ -81,16 +81,22 @@
 
 /**
  * Gets the systems current vector database provider.
- * NOTE: stripped down to ChromaDB only as part of the lightweight fork.
- * @param {('chroma') | null} getExactly - If provided, this will return an explit provider.
+ * NOTE: stripped down to ChromaDB + QDrant as part of the lightweight fork.
+ * @param {('chroma'|'qdrant') | null} getExactly - If provided, this will return an explit provider.
  * @returns { BaseVectorDatabaseProvider}
  */
 function getVectorDbClass(getExactly = null) {
   const vectorSelection = getExactly ?? process.env.VECTOR_DB ?? "chroma";
+  console.log(
+    `DEBUG getVectorDbClass: getExactly=[${getExactly}] process.env.VECTOR_DB=[${process.env.VECTOR_DB}] resolved=[${vectorSelection}]`
+  );
   switch (vectorSelection) {
     case "chroma":
       const { Chroma } = require("../vectorDbProviders/chroma");
       return new Chroma();
+    case "qdrant":
+      const { QDrant } = require("../vectorDbProviders/qdrant");
+      return new QDrant();
     default:
       console.error(
         `\x1b[31m[ENV ERROR]\x1b[0m No VECTOR_DB value found in environment! Falling back to ChromaDB`
